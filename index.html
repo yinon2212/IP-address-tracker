@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+  integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+  crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+ integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+ crossorigin=""></script>
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>
+  <div class="container">
+    <header><img src="./images/pattern-bg.png" alt=""></header>
+    <div class="ip-address-tracker">
+      <h1 class="heading">IP Address Tracker</h1>
+
+      <div class="input-styling">
+        <input type="text" class="ip-input" placeholder="Search for any IP address or domain">
+        <button class="submit-btn" onclick="submitIPAddr()"><img src="./images/icon-arrow.svg" alt=""></button>
+      </div>
+
+      <div class="address-information">
+        <div class="cell ip-address">
+          <p class="cell-heading">IP Address</p>
+          <p class="value">192.212.174.101</p>
+        </div>
+
+        <div class="cell location">
+          <p class="cell-heading">location</p>
+          <p class="value">Brooklyn, NY 10001</p>
+        </div>
+
+        <div class="cell timezone">
+          <p class="cell-heading">timezone</p>
+          <p class="value">UTC-05:00</p>
+        </div>
+
+        <div class="cell isp">
+          <p class="cell-heading">isp</p>
+          <p class="value">SpaceX Starlink</p>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>

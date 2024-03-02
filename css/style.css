@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    --very-dark-grey: hsl(0, 0%, 17%);
+    --dark-grey: hsl(0, 0%, 59%);
+}
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+/*Container*/
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container header{
+    width: 100%;
+    height: 30%;
+}
+
+.container header img{
+    width: 100%;
+}
+
+.container #map{
+    height: 70%;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    z-index: -1;  
+}
+
+
+/*IP Address Tracker*/
+.container .ip-address-tracker{
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    width: 70%;
+}
+
+.container .ip-address-tracker .heading{
+    margin-bottom: 30px;
+    color: white;
+}
+
+
+.container .ip-address-tracker .input-styling{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    height: 70px;
+    margin-bottom: 50px;
+}
+
+.container .ip-address-tracker .input-styling .ip-input{
+    width: calc(88% - 20px);
+    outline: none;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container .ip-address-tracker .input-styling .submit-btn{
+    width: 12%;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--very-dark-grey);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.container .ip-address-tracker .input-styling .submit-btn:hover{
+    background-color: hsl(0, 0%, 26%);
+}
+
+
+/*Address Information*/
+.container .address-information{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.315);
+    padding: 0 30px;
+}
+
+.container .address-information .cell{
+    text-align: left;
+}
+
+.container .address-information .cell .cell-heading{
+    margin-bottom: 10px;
+    color: var(--dark-grey);
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.container .address-information .cell .value{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
